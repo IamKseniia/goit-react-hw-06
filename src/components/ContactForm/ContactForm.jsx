@@ -43,15 +43,19 @@ const ContactForm = () => {
     >
       <Form className={s.form}>
         <div className={s.field}>
-          <label htmlFor="name">Name</label>
-          <Field className={s.input} type="text" name="name" />
-          <ErrorMessage className={s.error} name="name" component="span" />
+          <label className={s.label}>
+            <span>Name</span>
+            <Field className={s.input} type="text" name="name" />
+            <ErrorMessage className={s.error} name="name" component="span" />
+          </label>
         </div>
 
         <div className={s.field}>
-          <label htmlFor="number">Number</label>
-          <Field className={s.input} type="tel" name="number" />
-          <ErrorMessage className={s.error} name="number" component="span" />
+          <label className={s.label}>
+            <span>Number</span>
+            <Field className={s.input} type="tel" name="number" />
+            <ErrorMessage className={s.error} name="number" component="span" />
+          </label>
         </div>
 
         <button className={s.btn} type="submit">

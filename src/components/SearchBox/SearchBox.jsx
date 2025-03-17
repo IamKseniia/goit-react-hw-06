@@ -12,6 +12,7 @@ const SearchBox = () => {
         Find contacts by name
         <input
           className={s.input}
+          name="search"
           type="text"
           value={filters}
           onChange={event => {
